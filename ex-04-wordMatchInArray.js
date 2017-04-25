@@ -2,11 +2,19 @@
 /**
  * Ex-04 : wordMatchInArray()
  *
- * Write a function called `wordMatchInArray` that takes 2 inputs: a string, and an array. 
+ * Write a function called `wordMatchInArray` that takes 2 inputs: a string, and an array.
  * The function should return a boolean value if that word is found in the array.
- * 
+ *
 */
-
+ var wordMatchInArray = function (string, array) {
+   var wordToMatch = false;
+   for(var i = 0; i < array.length; i = i +1) {
+    //  console.log(array)
+     if(string === array[i])
+     wordToMatch = true;
+   }
+   return wordToMatch;
+ }
 
 
 
@@ -26,4 +34,3 @@ console.assert(wordMatchInArray('boys', sampleWordsArray) === false)
 var sampleWordsArray2 = ["boys", "there", "is", "no", "way", "out", "of", "here"]
 console.assert(wordMatchInArray('boys', sampleWordsArray2) === true)
 console.assert(wordMatchInArray('girls', sampleWordsArray2) === false)
-

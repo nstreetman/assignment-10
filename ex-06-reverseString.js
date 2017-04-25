@@ -5,8 +5,16 @@
  * Write a function called reverseString that takes a string as input
  * and returns a string with the characters in reverse order.
  * (note: can't use .reverse() method )
- * 
+ *
 */
+var reverseString = function (string) {
+    var outputString = ''
+    for(var i = string.length - 1; i > -1; i = i - 1) {
+    // console.log(string)
+    outputString = outputString + string[i];
+    }
+    return outputString;
+}
 
 
 

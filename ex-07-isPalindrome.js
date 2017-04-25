@@ -1,14 +1,26 @@
 
-/** 
+/**
  * Ex : isPalindrome()
  *
  * Write a function called `isPalindrome` that sees if the word
  * is equal when spelled same backward as it is forward
- * 
- * Hint: you may want to invoke the `reverseString` function you wrote earlier
+ *
+ * Hint: you may want to invoke the `reverseString` function you
+ wrote earlier
  * from the previous queestion
 */
-
+var isPalindrome = function (string) {
+  var isWordEqual = false;
+  var outputString = ''
+  for(var i = string.length - 1; i > -1; i = i - 1) {
+  // console.log(string)
+  outputString = outputString + string[i];
+  }
+  if(string === outputString) {
+    isWordEqual = true;
+  }
+  return isWordEqual;
+}
 
 
 

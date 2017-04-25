@@ -1,13 +1,23 @@
 /**
  * Ex-03 : shortiesOnly()
  *
- * Write a function called `shortiesOnly`. 
- * It should as input an array of strings, 
- * and it should return a new array containing 
+ * Write a function called `shortiesOnly`.
+ * It should as input an array of strings,
+ * and it should return a new array containing
  * only those strings with 4 or fewer characters.
- * 
+ *
 */
 
+var shortiesOnly = function(arrayOfStrings) {
+  var newArray = []
+  for(var i = 0; i < arrayOfStrings.length; i = i + 1) {
+    // console.log(arrayOfStrings)
+    if (arrayOfStrings[i].length <= 4){
+      newArray.push(arrayOfStrings[i])
+    }
+  }
+  return newArray
+}
 
 
 
